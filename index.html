@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectUp</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-[generalSans]">
+    <!-- Nav Bar -->
+    <div class="px-20 bg-theme_linear_1 lg:px-12 bg:px-6 sm:px-4">
+      <nav class="flex justify-between items-center py-4 w-full">
+        <div class="flex items-center w-2/5">
+          <img
+            class="mix-blend-multiply w-12"
+            src="Images/logo.png"
+            alt="logo"
+          />
+          <p class="text-xl font-semibold sm:hidden">
+            Connect<span class="font-outline-1 text-transparent">Up</span>
+          </p>
+        </div>
+        <div
+          class="flex justify-between w-3/5 xl:w-full md:items-center lg:justify-end lg:space-x-4 md:space-x-2"
+        >
+          <ul
+            id="nav_links"
+            class="flex items-center space-x-12 font-semibold relative lg:space-x-4 lg:text-sm md:transition-all md:!block md:absolute md:top-0 md:right-0 md:bg-theme_light_blue md:h-screen md:w-0 md:!space-x-0 md:space-y-4 md:py-20 md:px-0 md:z-10 md:text-xl overflow-hidden"
+          >
+            <li class="cursor-pointer w-max hover_underline">Home</li>
+            <li class="cursor-pointer w-max hover_underline">Pricing</li>
+            <li class="cursor-pointer w-max hover_underline">Platform</li>
+            <li class="cursor-pointer w-max hover_underline">Contact Us</li>
+
+            <svg
+              id="cross"
+              class="hidden w-10 h-10 cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-x"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </ul>
+          <button
+            class="bg-theme_black text-white py-4 px-6 rounded-xl font- text-sm font-medium"
+          >
+            <p class="w-max">Get Started</p>
+          </button>
+
+          <svg
+            id="hamburger"
+            class="hidden w-10 h-10 cursor-pointer md:block"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-menu"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <span class="line"></span>
+    <div
+      class="px-20 bg-gradient-to-b from-theme_linear_1 to-theme_light_blue lg:px-12 bg:px-6 sm:px-0"
+    >
+      <header
+        class="flex justify-between items-center min-h-screen border-x border-black p-8 lg:flex-col-reverse lg:p-4"
+      >
+        <div class="flex-1">
+          <h1
+            class="text-5xl font-bold leading-tight xl:text-4xl sm:text-3xl sm:py-4"
+          >
+            Grow your brand <br class="lg:hidden" />
+            with the power of<br class="lg:hidden" />
+            <span class="bg-gradient-to-r from-[#cac7fe] to-[#f1eff8]"
+              >influencers</span
+            >
+          </h1>
+          <h2 class="pt-4 pb-8 font-medium w-3/5 xl:w-4/5 text-sm lg:w-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sint
+            iste voluptatum et, sequi atque! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Nulla sint iste voluptatum et, sequi
+            atque!
+          </h2>
+          <div class="flex space-x-4 sm:flex-col sm:space-x-0 sm:space-y-2">
+            <button
+              class="flex items-center justify-center bg-theme_black text-white py-3 px-6 rounded-xl text-sm font-medium h-fit"
+            >
+              <p class="w-max">Get Started for free</p>
+
+              <svg
+                class="ml-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <button
+              class="flex items-center justify-center border border-black py-3 px-6 rounded-xl text-sm font-medium h-fit"
+            >
+              <svg
+                class="rotate-90 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-triangle"
+              >
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+              </svg>
+              <p class="w-max">Watch a Video</p>
+            </button>
+          </div>
+          <ul class="flex space-x-6 text-xs py-4">
+            <li>No Credit Card required</li>
+            <li class="list-disc">Cancel anytime</li>
+          </ul>
+        </div>
+        <div class="flex justify-end flex-1">
+          <img class="w-full" src="Images/hero.png" alt="hero" />
+        </div>
+      </header>
+    </div>
+    <span class="line"></span>
+
+    <!-- Brands -->
+    <section
+      class="bg-white px-20 lg:px-12 bg:px-6 sm:px-4 sm:w-full sm:overflow-scroll"
+    >
+      <div
+        class="flex justify-between py-4 sm:justify-center sm:mx-auto sm:w-max sm:space-x-8"
+      >
+        <!-- X -->
+        <svg
+          class="w-12 h-12 sm:w-8 sm:h-8"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 30 30"
+        >
+          <path
+            d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"
+          />
+        </svg>
+
+        <!-- Instagram -->
+        <svg
+          class="w-12 h-12 sm:w-8 sm:h-8"
+          xmlns="http://www.w3.org/2000/svg"
+          width="101.996"
+          viewBox="0 0 101.996 102"
+          id="instagram"
+        >
+          <defs>
+            <radialGradient
+              id="a"
+              cx="13.551"
+              cy="102.482"
+              r="133.147"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset=".09" stop-color="#fa8f21"></stop>
+              <stop offset=".78" stop-color="#d82d7e"></stop>
+            </radialGradient>
+            <radialGradient
+              id="b"
+              cx="61.859"
+              cy="107.051"
+              r="104.938"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop>
+              <stop offset="1" stop-color="#8c3aaa"></stop>
+            </radialGradient>
+          </defs>
+          <path
+            fill="url(#a)"
+            d="M34,51A17,17,0,1,1,51,68,17,17,0,0,1,34,51m-9.191,0A26.188,26.188,0,1,0,51,24.812,26.187,26.187,0,0,0,24.812,51M72.1,23.774a6.12,6.12,0,1,0,6.122-6.118h0a6.123,6.123,0,0,0-6.12,6.118M30.4,92.513a28.187,28.187,0,0,1-9.471-1.754,15.85,15.85,0,0,1-5.866-3.815,15.735,15.735,0,0,1-3.815-5.862A28.161,28.161,0,0,1,9.49,71.611c-.247-5.376-.3-6.991-.3-20.61s.053-15.23.3-20.61a28.374,28.374,0,0,1,1.754-9.471,15.85,15.85,0,0,1,3.815-5.866,15.718,15.718,0,0,1,5.866-3.815A28.161,28.161,0,0,1,30.4,9.484c5.376-.247,6.991-.3,20.6-.3s15.23.053,20.61.3a28.373,28.373,0,0,1,9.471,1.754,15.8,15.8,0,0,1,5.866,3.815,15.8,15.8,0,0,1,3.815,5.866,28.162,28.162,0,0,1,1.754,9.471c.247,5.38.3,6.991.3,20.61s-.049,15.23-.3,20.61a28.294,28.294,0,0,1-1.754,9.471,16.886,16.886,0,0,1-9.681,9.677,28.161,28.161,0,0,1-9.471,1.754c-5.376.247-6.991.3-20.61.3s-15.23-.049-20.6-.3M29.974.309A37.4,37.4,0,0,0,17.595,2.678,25.015,25.015,0,0,0,8.56,8.56a24.918,24.918,0,0,0-5.883,9.034A37.407,37.407,0,0,0,.309,29.974C.058,35.412,0,37.15,0,51S.058,66.588.309,72.026A37.405,37.405,0,0,0,2.678,84.405,24.931,24.931,0,0,0,8.56,93.44a25.076,25.076,0,0,0,9.034,5.883,37.43,37.43,0,0,0,12.379,2.369c5.441.247,7.176.309,21.026.309s15.588-.058,21.026-.309a37.405,37.405,0,0,0,12.379-2.369A26.075,26.075,0,0,0,99.322,84.405a37.3,37.3,0,0,0,2.369-12.379c.247-5.442.3-7.176.3-21.026s-.058-15.588-.3-21.026a37.394,37.394,0,0,0-2.369-12.379A25.08,25.08,0,0,0,93.44,8.56a24.955,24.955,0,0,0-9.03-5.883A37.347,37.347,0,0,0,72.03.309C66.593.062,64.854,0,51,0s-15.59.058-21.03.309"
+            data-name="Path 14"
+          ></path>
+          <path
+            fill="url(#b)"
+            d="M34,51A17,17,0,1,1,51,68,17,17,0,0,1,34,51m-9.191,0A26.188,26.188,0,1,0,51,24.812,26.187,26.187,0,0,0,24.812,51M72.1,23.774a6.12,6.12,0,1,0,6.122-6.118h0a6.123,6.123,0,0,0-6.12,6.118M30.4,92.513a28.187,28.187,0,0,1-9.471-1.754,15.85,15.85,0,0,1-5.866-3.815,15.735,15.735,0,0,1-3.815-5.862A28.161,28.161,0,0,1,9.49,71.611c-.247-5.376-.3-6.991-.3-20.61s.053-15.23.3-20.61a28.374,28.374,0,0,1,1.754-9.471,15.85,15.85,0,0,1,3.815-5.866,15.718,15.718,0,0,1,5.866-3.815A28.161,28.161,0,0,1,30.4,9.484c5.376-.247,6.991-.3,20.6-.3s15.23.053,20.61.3a28.373,28.373,0,0,1,9.471,1.754,15.8,15.8,0,0,1,5.866,3.815,15.8,15.8,0,0,1,3.815,5.866,28.162,28.162,0,0,1,1.754,9.471c.247,5.38.3,6.991.3,20.61s-.049,15.23-.3,20.61a28.294,28.294,0,0,1-1.754,9.471,16.886,16.886,0,0,1-9.681,9.677,28.161,28.161,0,0,1-9.471,1.754c-5.376.247-6.991.3-20.61.3s-15.23-.049-20.6-.3M29.974.309A37.4,37.4,0,0,0,17.595,2.678,25.015,25.015,0,0,0,8.56,8.56a24.918,24.918,0,0,0-5.883,9.034A37.407,37.407,0,0,0,.309,29.974C.058,35.412,0,37.15,0,51S.058,66.588.309,72.026A37.405,37.405,0,0,0,2.678,84.405,24.931,24.931,0,0,0,8.56,93.44a25.076,25.076,0,0,0,9.034,5.883,37.43,37.43,0,0,0,12.379,2.369c5.441.247,7.176.309,21.026.309s15.588-.058,21.026-.309a37.405,37.405,0,0,0,12.379-2.369A26.075,26.075,0,0,0,99.322,84.405a37.3,37.3,0,0,0,2.369-12.379c.247-5.442.3-7.176.3-21.026s-.058-15.588-.3-21.026a37.394,37.394,0,0,0-2.369-12.379A25.08,25.08,0,0,0,93.44,8.56a24.955,24.955,0,0,0-9.03-5.883A37.347,37.347,0,0,0,72.03.309C66.593.062,64.854,0,51,0s-15.59.058-21.03.309"
+            data-name="Path 15"
+          ></path>
+        </svg>
+
+        <!-- TikTok -->
+        <svg
+          class="w-12 h-12 sm:w-8 sm:h-8"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          viewBox="0 0 256 256"
+          xml:space="preserve"
+        >
+          <defs></defs>
+          <g
+            style="
+              stroke: none;
+              stroke-width: 0;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: none;
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+          >
+            <path
+              d="M 10.41 7.179 V 6.517 c -0.23 -0.033 -0.461 -0.049 -0.693 -0.051 c -2.836 0 -5.143 2.308 -5.143 5.144 c 0 1.74 0.869 3.28 2.196 4.211 c -0.888 -0.95 -1.382 -2.202 -1.381 -3.502 C 5.388 9.524 7.63 7.244 10.41 7.179"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 242, 234);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(3.89 0 0 3.89 -1.9444444444444287 -1.9444444444444287) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 10.531 14.668 c 1.265 0 2.297 -1.007 2.345 -2.261 L 12.88 1.209 h 2.046 C 14.882 0.975 14.86 0.738 14.86 0.5 h -2.794 l -0.005 11.199 c -0.047 1.254 -1.079 2.26 -2.344 2.26 c -0.38 0 -0.754 -0.092 -1.09 -0.27 C 9.067 14.303 9.776 14.667 10.531 14.668 M 18.748 5.01 V 4.388 c -0.752 0.001 -1.488 -0.218 -2.117 -0.629 C 17.182 4.394 17.925 4.833 18.748 5.01"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 242, 234);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(3.89 0 0 3.89 -1.9444444444444287 -1.9444444444444287) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 16.631 3.758 c -0.617 -0.706 -0.956 -1.611 -0.956 -2.548 h -0.749 C 15.122 2.256 15.738 3.177 16.631 3.758 M 9.717 9.261 C 8.42 9.263 7.37 10.313 7.368 11.61 c 0.001 0.873 0.485 1.674 1.259 2.079 c -0.289 -0.398 -0.444 -0.878 -0.444 -1.37 c 0.001 -1.297 1.052 -2.348 2.349 -2.349 c 0.242 0 0.474 0.04 0.693 0.109 V 7.226 c -0.23 -0.033 -0.461 -0.049 -0.693 -0.051 c -0.041 0 -0.081 0.002 -0.121 0.003 V 9.37 C 10.186 9.299 9.952 9.262 9.717 9.261"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(255, 0, 79);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(3.89 0 0 3.89 -1.9444444444444287 -1.9444444444444287) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 18.748 5.01 v 2.172 c -1.449 0 -2.791 -0.463 -3.888 -1.25 v 5.679 c 0 2.836 -2.307 5.143 -5.143 5.143 c -1.096 0 -2.112 -0.346 -2.947 -0.932 c 0.971 1.047 2.334 1.642 3.762 1.641 c 2.836 0 5.143 -2.307 5.143 -5.143 V 6.641 c 1.133 0.814 2.493 1.252 3.888 1.25 V 5.096 C 19.282 5.096 19.01 5.066 18.748 5.01"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(255, 0, 79);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(3.89 0 0 3.89 -1.9444444444444287 -1.9444444444444287) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 14.86 11.61 V 5.932 c 1.133 0.815 2.493 1.252 3.888 1.25 V 5.01 c -0.822 -0.177 -1.565 -0.617 -2.117 -1.252 c -0.893 -0.581 -1.509 -1.502 -1.705 -2.548 H 12.88 l -0.004 11.198 c -0.047 1.254 -1.079 2.261 -2.345 2.261 c -0.755 -0.001 -1.464 -0.365 -1.904 -0.979 c -0.773 -0.405 -1.258 -1.206 -1.259 -2.079 C 7.37 10.314 8.42 9.263 9.717 9.261 c 0.242 0 0.474 0.04 0.693 0.109 V 7.179 C 7.63 7.244 5.388 9.524 5.388 12.32 c 0 1.352 0.525 2.583 1.381 3.502 c 0.863 0.607 1.892 0.933 2.947 0.932 C 12.553 16.753 14.86 14.446 14.86 11.61"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(3.89 0 0 3.89 -1.9444444444444287 -1.9444444444444287) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 11.857 75.066 h 11.101 l -1.017 3.18 h -2.88 V 90 h -3.59 V 78.246 l -3.609 0.005 L 11.857 75.066 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 41.148 75.066 h 11.36 l -1.017 3.18 h -3.134 V 90 h -3.595 V 78.246 l -3.609 0.005 L 41.148 75.066 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 23.64 79.817 h 3.556 V 90 h -3.537 L 23.64 79.817 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 28.612 75.028 h 3.556 v 6.955 l 3.523 -3.463 h 4.243 l -4.459 4.328 L 40.467 90 H 36.55 l -3.331 -4.957 l -1.056 1.023 V 90 h -3.556 V 75.028 H 28.612 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 66.288 75.028 h 3.557 v 6.955 l 3.522 -3.463 h 4.243 l -4.459 4.328 L 78.143 90 h -3.912 L 70.9 85.043 l -1.056 1.023 V 90 h -3.557 V 75.028 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 25.416 78.654 c 0.989 0 1.79 -0.802 1.79 -1.792 c 0 -0.989 -0.801 -1.792 -1.79 -1.792 c -0.989 0 -1.79 0.802 -1.79 1.792 C 23.626 77.852 24.427 78.654 25.416 78.654 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 52.053 83.904 c 0 -3.204 2.472 -5.831 5.615 -6.076 c -0.158 -0.014 -0.374 -0.019 -0.533 -0.019 c -3.364 0 -6.091 2.728 -6.091 6.096 c 0 3.367 2.726 6.096 6.091 6.096 c 0.158 0 0.374 -0.01 0.533 -0.019 C 54.529 89.736 52.053 87.108 52.053 83.904 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(37, 244, 238);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 59.051 77.809 c -0.163 0 -0.379 0.01 -0.538 0.019 c 3.139 0.245 5.611 2.873 5.611 6.076 c 0 3.204 -2.472 5.831 -5.611 6.076 C 58.671 89.995 58.887 90 59.051 90 c 3.364 0 6.091 -2.728 6.091 -6.096 C 65.141 80.537 62.415 77.809 59.051 77.809 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(254, 44, 85);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+            <path
+              d="M 58.091 86.868 c -1.637 0 -2.961 -1.326 -2.961 -2.964 c 0 -1.638 1.325 -2.964 2.961 -2.964 c 1.637 0 2.961 1.326 2.961 2.964 C 61.052 85.542 59.722 86.868 58.091 86.868 z M 58.091 77.809 c -3.364 0 -6.09 2.728 -6.09 6.096 C 52 87.272 54.726 90 58.091 90 c 3.364 0 6.091 -2.728 6.091 -6.096 C 64.181 80.537 61.455 77.809 58.091 77.809 z"
+              style="
+                stroke: none;
+                stroke-width: 1;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: rgb(0, 0, 0);
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform=" matrix(1 0 0 1 0 0) "
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+
+        <!-- Youtube -->
+
+        <svg
+          class="w-36 sm:w-32 sm:!mx-2"
+          xmlns="http://www.w3.org/2000/svg"
+          width="150px"
+          xml:space="preserve"
+          y="0"
+          x="0"
+          id="Layer_1"
+          version="1.1"
+          viewBox="-57.15 -21.25 495.3 127.5"
+        >
+          <style id="style7427" type="text/css">
+            .st2 {
+              fill: #282828;
+            }
+          </style>
+          <g id="g7433">
+            <path
+              id="path7429"
+              d="M118.9 13.3c-1.4-5.2-5.5-9.3-10.7-10.7C98.7 0 60.7 0 60.7 0s-38 0-47.5 2.5C8.1 3.9 3.9 8.1 2.5 13.3 0 22.8 0 42.5 0 42.5s0 19.8 2.5 29.2C3.9 76.9 8 81 13.2 82.4 22.8 85 60.7 85 60.7 85s38 0 47.5-2.5c5.2-1.4 9.3-5.5 10.7-10.7 2.5-9.5 2.5-29.2 2.5-29.2s.1-19.8-2.5-29.3z"
+              fill="red"
+            />
+            <path id="polygon7431" fill="#fff" d="M48.6 24.3v36.4l31.6-18.2z" />
+          </g>
+          <g id="g7451">
+            <g id="g7449">
+              <path
+                id="path7435"
+                d="M176.3 77.4c-2.4-1.6-4.1-4.1-5.1-7.6-1-3.4-1.5-8-1.5-13.6v-7.7c0-5.7.6-10.3 1.7-13.8 1.2-3.5 3-6 5.4-7.6 2.5-1.6 5.7-2.4 9.7-2.4 3.9 0 7.1.8 9.5 2.4 2.4 1.6 4.1 4.2 5.2 7.6 1.1 3.4 1.7 8 1.7 13.8v7.7c0 5.7-.5 10.2-1.6 13.7-1.1 3.4-2.8 6-5.2 7.6-2.4 1.6-5.7 2.4-9.8 2.4-4.2-.1-7.6-.9-10-2.5zm13.5-8.4c.7-1.7 1-4.6 1-8.5V43.9c0-3.8-.3-6.6-1-8.4-.7-1.8-1.8-2.6-3.5-2.6-1.6 0-2.8.9-3.4 2.6-.7 1.8-1 4.6-1 8.4v16.6c0 3.9.3 6.8 1 8.5.6 1.7 1.8 2.6 3.5 2.6 1.6 0 2.7-.8 3.4-2.6z"
+                class="st2"
+              />
+              <path
+                id="path7437"
+                d="M360.9 56.3V59c0 3.4.1 6 .3 7.7.2 1.7.6 3 1.3 3.7.6.8 1.6 1.2 3 1.2 1.8 0 3-.7 3.7-2.1.7-1.4 1-3.7 1.1-7l10.3.6c.1.5.1 1.1.1 1.9 0 4.9-1.3 8.6-4 11-2.7 2.4-6.5 3.6-11.4 3.6-5.9 0-10-1.9-12.4-5.6-2.4-3.7-3.6-9.4-3.6-17.2v-9.3c0-8 1.2-13.8 3.7-17.5 2.5-3.7 6.7-5.5 12.6-5.5 4.1 0 7.3.8 9.5 2.3 2.2 1.5 3.7 3.9 4.6 7 .9 3.2 1.3 7.6 1.3 13.2v9.1h-20.1zm1.5-22.4c-.6.8-1 2-1.2 3.7-.2 1.7-.3 4.3-.3 7.8v3.8h8.8v-3.8c0-3.4-.1-6-.3-7.8-.2-1.8-.7-3-1.3-3.7-.6-.7-1.6-1.1-2.8-1.1-1.4-.1-2.3.3-2.9 1.1z"
+                class="st2"
+              />
+              <path
+                id="path7439"
+                d="M147.1 55.3L133.5 6h11.9l4.8 22.3c1.2 5.5 2.1 10.2 2.7 14.1h.3c.4-2.8 1.3-7.4 2.7-14l5-22.4h11.9L159 55.3v23.6h-11.8V55.3z"
+                class="st2"
+              />
+              <path
+                id="path7441"
+                d="M241.6 25.7V79h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.7h12v39.1c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.7z"
+                class="st2"
+              />
+              <path
+                id="path7443"
+                d="M303.1 25.7V79h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.7h12v39.1c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.7z"
+                class="st2"
+              />
+              <path
+                id="path7445"
+                d="M274.2 15.7h-11.9v63.2h-11.7V15.7h-11.9V6h35.5z"
+                class="st2"
+              />
+              <path
+                id="path7447"
+                d="M342.8 34.2c-.7-3.4-1.9-5.8-3.5-7.3s-3.9-2.3-6.7-2.3c-2.2 0-4.3.6-6.2 1.9-1.9 1.2-3.4 2.9-4.4 4.9h-.1V3.3h-11.6v75.6h9.9l1.2-5h.3c.9 1.8 2.3 3.2 4.2 4.3 1.9 1 3.9 1.6 6.2 1.6 4.1 0 7-1.9 8.9-5.6 1.9-3.7 2.9-9.6 2.9-17.5v-8.4c-.1-6.1-.4-10.8-1.1-14.1zm-11 21.7c0 3.9-.2 6.9-.5 9.1-.3 2.2-.9 3.8-1.6 4.7-.8.9-1.8 1.4-3 1.4-1 0-1.9-.2-2.7-.7-.8-.5-1.5-1.2-2-2.1V38.1c.4-1.4 1.1-2.6 2.1-3.6 1-.9 2.1-1.4 3.2-1.4 1.2 0 2.2.5 2.8 1.4.7 1 1.1 2.6 1.4 4.8.3 2.3.4 5.5.4 9.6v7z"
+                class="st2"
+              />
+            </g>
+          </g>
+        </svg>
+
+        <!-- Facebook -->
+        <svg
+          class="w-12 h-12 sm:w-8 sm:h-8 sm:!mx-0"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48 48"
+        >
+          <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z" />
+          <path
+            fill="#fff"
+            d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"
+          />
+        </svg>
+      </div>
+    </section>
+    <span class="line"></span>
+
+    <section class="px-20 lg:px-12 bg:px-6 sm:px-0">
+      <ul class="flex justify-between border-collapse bg:flex-col">
+        <li
+          class="flex items-center justify-center border-x border-black space-x-4 px-6 py-24 lg:flex-col lg:items-start lg:space-y-2 lg:space-x-0"
+        >
+          <div>
+            <img
+              class="bg-theme_green w-16 lg:w-14 sm:w-16 p-3 rounded-full"
+              src="https://img.icons8.com/fluency-systems-regular/48/idea.png"
+              alt="idea"
+            />
+          </div>
+          <div class="space-y-2">
+            <p class="font-semibold text-lg">Content Creation</p>
+            <p class="text-xs font-medium">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </li>
+        <li
+          class="flex items-center justify-center space-x-4 px-6 py-24 bg:border bg:border-black lg:flex-col lg:items-start lg:space-y-2 lg:space-x-0"
+        >
+          <div>
+            <img
+              class="bg-theme_blue w-16 lg:w-14 sm:w-16 p-3 rounded-full"
+              src="https://img.icons8.com/windows/32/commercial.png"
+              alt="commercial"
+            />
+          </div>
+          <div class="space-y-2">
+            <p class="font-semibold text-lg">Content Creation</p>
+            <p class="text-xs font-medium">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </li>
+        <li
+          class="flex items-center justify-center space-x-4 border-x border-black px-6 py-24 lg:flex-col lg:items-start lg:space-y-2 lg:space-x-0"
+        >
+          <div>
+            <img
+              class="bg-theme_purple w-16 lg:w-14 sm:w-16 p-3 rounded-full"
+              src="https://img.icons8.com/fluency-systems-filled/48/graph.png"
+              alt="graph"
+            />
+          </div>
+          <div class="space-y-2">
+            <p class="font-semibold text-lg">Content Creation</p>
+            <p class="text-xs font-medium">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <span class="line"></span>
+
+    <!-- Hero 2  -->
+    <section
+      class="flex justify-between items-center space-x-8 p-20 lg:px-12 bg:flex-col bg:px-1 bg:space-x-0 bg:py-2"
+    >
+      <img class="w-[45%] bg:w-auto" src="Images/hero2.png" alt="about" />
+
+      <div class="bg:p-4">
+        <p class="font-bold text-3xl lg:text-2xl">
+          Top #1 influencers marketing in <br class="lg:hidden" />the world
+        </p>
+        <p class="font-medium mt-5 mb-16 sm:text-sm sm:mb-8">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <br class="xl:hidden" />Cum et vitae nisi molestias similique
+          exercitationem ab<br class="xl:hidden" />
+          harum praesentium eaque modi.
+        </p>
+        <button
+          class="bg-theme_black text-white py-4 px-6 rounded-xl text-sm font-medium sm:w-full"
+        >
+          <p class="w-max sm:mx-auto">Start a free trial</p>
+        </button>
+      </div>
+    </section>
+
+    <span class="line"></span>
+    <section class="bg-[#f4f1ff]">
+      <ul class="flex w-full px-20 bg:overflow-scroll lg:px-12 bg:pl-12">
+        <li
+          class="w-full text-center space-y-6 border-x border-black py-14 bg:px-8 bg:py-10"
+        >
+          <p class="font-bold text-3xl bg:text-xl">4.8K</p>
+          <p class="font-medium bg:w-max bg:text-sm bg:mx-auto">
+            Deals Completed
+          </p>
+        </li>
+        <li class="w-full text-center space-y-6 py-14 bg:px-8 bg:py-10">
+          <p class="font-bold text-3xl bg:text-xl">6.4k+</p>
+          <p class="font-medium bg:w-max bg:text-sm bg:mx-auto">
+            Gloabal Clients
+          </p>
+        </li>
+        <li
+          class="w-full text-center space-y-6 border-x border-black py-14 bg:px-8 bg:py-10"
+        >
+          <p class="font-bold text-3xl bg:text-xl">9.6K+</p>
+          <p class="font-medium bg:w-max bg:text-sm bg:mx-auto">
+            Successful Campaigns
+          </p>
+        </li>
+      </ul>
+    </section>
+    <span class="line"></span>
+
+    <!-- Reviews Section -->
+    <section class="px-20 lg:px-12 bg:px-6 sm:px-0">
+      <div class="border-x border-black py-20 bg:py-8">
+        <ul
+          class="flex space-x-20 px-4 xl:space-x-4 bg:flex-col-reverse bg:space-x-0 bg:space-y-8 bg:items-center"
+        >
+          <li></li>
+          <li class="neumorphism w-1/3 pb-4 xl:w-auto flex-1">
+            <img src="Images/model1.webp" alt="rand" />
+            <div class="p-4 space-y-2">
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit, fugit.
+              </p>
+              <p class="font-semibold">Wade Warren</p>
+              <p class="text-sm">Web Designer</p>
+            </div>
+          </li>
+          <li class="w-1/3 neumorphism pb-4 xl:w-auto flex-1">
+            <img src="Images/model2.webp" alt="rand" />
+            <div class="p-4 space-y-2">
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit, fugit.
+              </p>
+              <p class="font-bold">Wade Warren</p>
+              <p class="text-sm">Web Designer</p>
+            </div>
+          </li>
+          <li class="w-1/3 neumorphism pb-4 xl:w-auto flex-1">
+            <img src="Images/model3.webp" alt="rand" />
+            <div class="p-4 space-y-2">
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit, fugit.
+              </p>
+              <p class="font-bold">Wade Warren</p>
+              <p class="text-sm">Web Designer</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex justify-center border-x border-black pb-10 sm:mx-4 sm:border-none"
+      >
+        <button
+          class="border border-black rounded-xl text-sm font-semibold py-3 px-6 sm:w-full"
+        >
+          <p class="w-max sm:m-auto">Read all reviews</p>
+        </button>
+      </div>
+    </section>
+    <span class="line sm:hidden"></span>
+
+    <!-- Join us Page -->
+    <section class="px-20 lg:px-12 bg:px-6 sm:px-4">
+      <div
+        class="flex justify-center flex-col items-center text-center px-20 py-32 bg-gradient-to-r to-[#e8faea] from-[#d6d2f9] border border-black mt-[0.1rem] sm:py-16 sm:px-2"
+      >
+        <p class="font-bold text-3xl sm:text-lg">
+          Discover your ideal influencer partnership today
+        </p>
+        <p class="font-medium mt-5 mb-16 sm:text-sm sm:mb-8">
+          We'll help you find the best influencer for<br />your brand - in just
+          a few clicks!
+        </p>
+        <button
+          class="bg-theme_black text-white py-4 px-6 rounded-xl font- text-sm font-medium"
+        >
+          <p class="w-max">Start a free trial</p>
+        </button>
+      </div>
+    </section>
+
+    <footer class="relative">
+      <div
+        class="bg-theme_black flex justify-between px-20 text-white pt-80 pb-20 absolute -bottom-60 -z-10 w-full lg:px-12 bg:px-6 sm:flex-col-reverse sm:px-4 sm:pb-12 sm:-bottom-96"
+      >
+        <p>© Copyright 2024,All Rights Reserved</p>
+        <hr class="hidden sm:block sm:my-12" />
+        <ul
+          class="flex space-x-8 sm:flex-col sm:space-x-0 sm:space-y-2 text-theme_light_blue"
+        >
+          <li class="cursor-pointer w-max hover_underline after:bg-white">
+            Support
+          </li>
+          <li class="cursor-pointer w-max hover_underline after:bg-white">
+            Terms & Conditions
+          </li>
+          <li class="cursor-pointer w-max hover_underline after:bg-white">
+            Privacy Policy
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
